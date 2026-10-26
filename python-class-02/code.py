@@ -10,10 +10,10 @@ new_float_age = float(age) # 25.0 (float)
 result = 1 + 2.5 # 3.5 (float)
 
 # Simple sum program
-# a = int(input("Enter first number: "))
-# b = int(input("Enter second number: "))
-# sum = a + b
-# print("Sum: ", sum)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+sum = a + b
+print("Sum: ", sum)
 
 # String methods -> String methods are used to perform operations on strings.
 # Strings are immutable in Python, which means we cannot modify or update the original string after it is created.
