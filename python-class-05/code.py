@@ -14,8 +14,8 @@ len(values) # Output: 4
 values[0:3] # Output: [10, 10.5, 'hello']
 
 # loop in a list
-# for value in values:
-#   print(value)
+for value in values:
+  print(value)
 
 # List is mutable - we can add, delete or change the values of a list
 # The append() method adds an item to the end of a list.
@@ -25,12 +25,12 @@ values.append(90) # Output: [10, 10.5, 'hello', True, 90]
 values.insert(2, 35) # Output: [10, 10.5, 35, 'hello', True, 90]
 
 # The in operator checks whether an item exists in a list.
-# print("hello" in values) # Output: True
-# print(100 in values) # Output: False
+print("hello" in values) # Output: True
+print(100 in values) # Output: False
 
 # The clear() method removes all items from a list.
 values.clear()
-# print(values) # Output: []
+print(values) # Output: []
 
 
 # Tuples - Immutable
@@ -48,3 +48,32 @@ tuple_values.index(10) # Output: 0
 # Parentheses are optional when creating a tuple.
 numbers = 10, 20, 30
 type(numbers)  # <class 'tuple'>
+
+# Set
+# A set is a collection of unique items with no duplicate values.
+set_values = {98, 94, 99, 91, 92}
+
+for value in set_values:
+  print(value)
+
+# Dictionary
+# A dictionary stores data as key-value pairs.
+person = {
+  "name": "John Doe",
+  "age": 24,
+  "isMarried": False
+}
+
+# We use a key to access its corresponding value in a dictionary.
+person["name"]
+person["isMarried"]
+
+# We can update a dictionary value by assigning a new value to its key.
+person["name"] = "Harry Potter" # Output: {'name': 'Harry Potter', 'age': 24, 'isMarried': False}
+
+# We can add a new key-value pair to a dictionary by assigning a value to a new key.
+person["country"] = "United States America"
+
+# loop on a dictionary
+for key in person:
+  print(key, person[key])
